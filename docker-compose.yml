@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  sayfor:
+    build: .
+    image: cranpun/anagrambuster
+    container_name: anagrambuster
+    ports:
+      - '80:80'
