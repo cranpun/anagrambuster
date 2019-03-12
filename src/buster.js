@@ -16,7 +16,7 @@ const makeAnagrams = (head, arr, shuffle) => {
                     anagram: anagram,
                     remines: remines,
                 };
-                console.log(data);
+                // console.log(data);
                 ret.push(data);
             }
             return ret;
@@ -53,7 +53,6 @@ const buster = (text, shuffle) => {
         return [];
     }
     const ret = makeAnagrams("", arr, shuffle);
-    console.log(shuffle);
     return ret;
 }
 

@@ -1,4 +1,4 @@
-class SayforMain extends React.Component {
+class AnagramBusterMain extends React.Component {
     constructor(props) {
         super(props);
 
@@ -104,6 +104,6 @@ class SayforMain extends React.Component {
 }
 
 ReactDOM.render(
-    <SayforMain />,
+    <AnagramBusterMain />,
     document.querySelector('#main_content')
 );

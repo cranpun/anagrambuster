@@ -1,4 +1,4 @@
-class SayforFooter extends React.Component {
+class AnagramBusterFooter extends React.Component {
     constructor(props) {
         super(props);
 
@@ -33,6 +33,6 @@ class SayforFooter extends React.Component {
 }
 
 ReactDOM.render(
-    <SayforFooter />,
+    <AnagramBusterFooter />,
     document.querySelector('#footer_content')
 );
