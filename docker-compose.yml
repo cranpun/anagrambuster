@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  sayfor:
+  anagrambuster:
     build: .
     image: cranpun/anagrambuster
     container_name: anagrambuster
