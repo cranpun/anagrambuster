@@ -3,7 +3,7 @@
 
 <head>
     <title>AnagramBuster</title>
-    <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="shortcut icon" href="./favicon.png" />
     <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no">
     <meta charset="utf-8">
 
@@ -23,11 +23,11 @@
         crossorigin="anonymous"></script>
 
     <!-- react -->
-    <!-- dev
+    <!-- dev -->
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    -->
-    <!-- prod -->
+    <!-- -->
+    <!-- prod 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     <!-- -->
@@ -61,9 +61,10 @@
             return t;
         }(document, "script", "twitter-wjs"));</script>
     <!-- my -->
+    <script type="text/javascript" src="./buster.js"></script>
     <link rel="stylesheet" href="./style.css">
     <script type="text/babel" src="./main.js"></script>
-    <script type="text/babel" src="./footer.js"></script>
+    <!-- <script type="text/babel" src="./footer.js"></script> -->
 </head>
 
 <body>
@@ -84,7 +85,11 @@
     </main>
     <footer id="footer">
         <div id="footer_content" class="container">
-
+            <div id="wrap_footer" class="flrow">
+                <div class="flitem">
+                    <span>©copyright </span><a href="https://github.com/cranpun/anagrambuster">cranpun/anagrambuster</a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

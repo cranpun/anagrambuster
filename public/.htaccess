@@ -1,0 +1,10 @@
+AddType application/x-httpd-php .php .json
+Header set Access-Control-Allow-Origin "*"
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+
+<Files ~ "^test\.html$">
+    deny from all
+</Files>

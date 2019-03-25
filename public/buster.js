@@ -1,10 +1,13 @@
-const skipCap = [
-    "っ", "ん", "ゃ", "ゅ", "ょ", "ぁ", "ぃ", "ぅ", "ぇ", "ぉ",
-];
+const make = function() {
+    console.log("make");
+}
 
-const makeAnagrams = (head, arr, shuffle) => {
+const makeAnagrams = function(head, arr, shuffle) {
 
     try {
+        const skipCap = [
+            "っ", "ん", "ゃ", "ゅ", "ょ", "ぁ", "ぃ", "ぅ", "ぇ", "ぉ",
+        ];
         if (head.length >= shuffle - 1) {
             // ここでさらに一文字足すのでshuffleは-1
             const ret = [];
@@ -43,19 +46,4 @@ const makeAnagrams = (head, arr, shuffle) => {
         // エラー
         return [];
     }
-};
-
-const buster = (text, shuffle) => {
-    // 文字列　→ 配列
-    const arr = text.split('');
-    if (arr.length === 0) {
-        // 文字がないため終了
-        return [];
-    }
-    const ret = makeAnagrams("", arr, shuffle);
-    return ret;
-}
-
-module.exports = {
-    buster: buster
 };
